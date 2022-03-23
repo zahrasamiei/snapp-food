@@ -1,0 +1,100 @@
+{
+    "ingredients": [
+        {
+            "title": "Ham",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 0
+        },
+        {
+            "title": "Cheese",
+            "best_before": "2025-07-08",
+            "expires_at": "2023-07-13",
+            "stock": 4
+        },
+        {
+            "title": "Bread",
+            "best_before": "2023-07-25",
+            "expires_at": "2023-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Butter",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Bacon",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Eggs",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Mushrooms",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Sausage",
+            "best_before": "2025-07-25",
+            "expires_at": "2022-05-27",
+            "stock": 3
+        },
+        {
+            "title": "Hotdog Bun",
+            "best_before": "2025-07-25",
+            "expires_at": "2024-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Ketchup",
+            "best_before": "2025-07-25",
+            "expires_at": "2022-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Mustard",
+            "best_before": "2023-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Lettuce",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Tomato",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Cucumber",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 3
+        },
+        {
+            "title": "Beetroot",
+            "best_before": "2025-07-25",
+            "expires_at": "2025-07-27",
+            "stock": 0
+        },
+        {
+            "title": "Salad Dressing",
+            "best_before": "2025-07-06",
+            "expires_at": "2025-07-07",
+            "stock": 0
+        }
+    ]
+}
