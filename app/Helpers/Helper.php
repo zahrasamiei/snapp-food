@@ -1,4 +1,5 @@
 <?php
+use App\Models\User;
 
 #read json data from given file and convert to array
 if (!function_exists("readJsonFile"))
@@ -53,5 +54,39 @@ if(! function_exists('callResource') ) {
         return json_decode((new $resource($data))->toJson(), true);
     }
 
+}
+#end
+
+
+#create user for unit test
+if(! function_exists('createUserForTest') )
+{
+    function createUserForTest()
+    {
+        $password = '123456789';
+        $user = User::create([
+            'name' => 'Test '. time(),
+            'email'=> $email = time().'@example.com',
+            'password' => bcrypt($password),
+            'confirm_password' => bcrypt($password)
+        ]);
+
+        return [
+            "user_id" => $user->id,
+            "email" => $email,
+            "password" => $password,
+            "token" => "Bearer ".$user->createToken('authToken')->accessToken
+        ];
+    }
+}
+#end
+
+#delete user that created for unit test
+if(! function_exists('deleteUserForTest') )
+{
+    function deleteUserForTest($user_id)
+    {
+        User::where('id', $user_id)->delete();
+    }
 }
 #end

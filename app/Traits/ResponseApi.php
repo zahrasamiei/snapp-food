@@ -33,7 +33,9 @@ trait ResponseApi
 
         # Send the response
         response()->json($result, $statusCode)->send();
-        die();
+        if (!$isSuccess) {
+            die();
+        }
     }
 
     /**
