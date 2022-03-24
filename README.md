@@ -31,4 +31,23 @@
   <li>You can also get the list of api urls with the <b>php artisan route:list</b> command</li>
   <li>You can see test files in path: <b>tests/Features</b></li>
   <li>You can run test with this command: <b>tests/Features</b></li>
+  <hr>
+  <li> I use docker, you can use with following steps:
+    <ol>
+      <li>first you have already installed docker</li>
+      <li>cd /path/to/laravel-clone-project</li>
+      <li>cp .env.example .env</li>
+      <li>chmod -R 0777 storage</li>
+      <li>chmod -R 0777 bootstrap/cache</li>
+      <li>docker-compose build</li>
+      <li>docker run --rm -it --volume $(pwd):/app sample_php composer install</li>
+      <li>docker run --rm -it --volume $(pwd):/app sample_php php artisan key:generate</li>
+      <li>Replace sample_php with your project image name.</li>
+      <li>docker-compose up -d</li>
+      <li>docker-compose exec php php artisan migrate</li>
+      <li>docker-compose exec php php artisan passport:install</li>
+      <li>docker-compose exec php php artisan db:seed</li>
+      <li>docker-compose ps</li>
+    </ol>
+  </li>
 </ul>
